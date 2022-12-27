@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/productdetails.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Chi Tiết Sản Phẩm</title>
+</head>
+
+<body>
+    <!-- Header page -->
+    <div class="header_page">
+        <div class="header_page-main">
+
+            <div class="header_page-logo">
+                <a href="index.html"><img src="img/logoWeb.png" alt=""></a>
+            </div>
+
+            <div class="header_page-category">
+
+                <ul class="header_page-category-main-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="product.html"> Sản phẩm
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="header_page-category-sub-menu">
+                            <li><a href="product.html">Vợt Cầu Lông</a></li>
+                            <li><a href="product1.html">Giày Cầu Lông</a></li>
+                            <li><a href="">Giày Chạy Bộ</a></li>
+                            <li><a href="">Balo</a></li>
+                            <li><a href="">Phụ Kiện</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Trang<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="header_page-category-sub-menu">
+                            <li><a href="login.html" style="font-weight: normal">Đăng nhập</a></li>
+                            <li><a href="cart.html" style="font-weight: normal">Giỏ hàng</a></li>
+                            <li><a href="about.html" style="font-weight: normal">Giới thiệu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+
+            </div>
+
+            <!--  -->
+            <div class="header_page-btns non-reponsive">
+                <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>Tìm
+                    kiếm
+                </button>
+                <button><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i>Giỏ hàng(100)</a></button>
+                <button><a href="login.html"><i class="fa-solid fa-user"></i>Tài khoản</a></button>
+            </div>
+            <!--  -->
+            <div class="header_page-btns responsive">
+                <div class="nav">
+                    <button class="navbar"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+                <div class="right_btn">
+                    <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></button>
+                    <button><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                </div>
+
+                <div class="category_header-responsive">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="main-menu-list">
+                            <div class="main-menu-title">
+                                <a href="product.html">
+                                    <h1>Sản phẩm</h1>
+                                </a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <!-- <a href="product.html"> Sản phẩm
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a> -->
+                            <div class="main-menu-content">
+                                <ul>
+                                    <li><a href="product.html" style="font-weight: normal">Vợt Cầu Lông</a></li>
+                                    <li><a href="product1.html" style="font-weight: normal">Giày Cầu Lông</a></li>
+                                    <li><a href="" style="font-weight: normal">Giày Chạy Bộ</a></li>
+                                    <li><a href="" style="font-weight: normal">Balo</a></li>
+                                    <li><a href="" style="font-weight: normal">Phụ Kiện</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main-menu-list">
+                            <div class="main-menu-title">
+                                <h1>Trang</h1>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="main-menu-content">
+                                <ul>
+                                    <!-- <li><a href=""></a>Đăng ký</li> -->
+                                    <li><a href="login.html" style="font-weight: normal">Đăng nhập</a></li>
+                                    <li><a href="cart.html" style="font-weight: normal">Giỏ hàng</a></li>
+                                    <li><a href="about.html" style="font-weight: normal">Giới thiệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                    <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="hidden-menu"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="header_page-modal-search">
+
+        <div class="main-modal">
+            <div class="main-modal-close-btn">
+                <button type="button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="main-modal-title">
+                <h1>Tìm kiếm</h1>
+            </div>
+            <div class="main-modal-category">
+                <ul>
+                    <li>Tất cả</li>
+                    <li>Vợt Cầu Lông</li>
+                    <li>Giày Cầu Lông</li>
+                    <li>Giày Chạy Bộ</li>
+                    <li>Balo</li>
+                    <li>Phụ Kiện</li>
+                </ul>
+            </div>
+            <div class="main-modal-search">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="hide-modal-search"></div>
+
+    </div>
+    <!--banner-->
+    <div class="banner">
+        <h1>Chi tiết sản phẩm</h1>
+    </div>
+    <!-- body page -->
+    <div class="body_page-menu">
+        <ul>
+            <li><a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Trang chủ</a>
+            </li>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <li class="second"><a href="">Giày Chạy Bộ</a></li>
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <li><a href="">Giày Thể Thao Nam Adidas Ultraboost 4.0</a></li>
+        </ul>
+    </div>
+    <div class="product_details">
+        <div class="product_detail-area">
+            <div class="container">
+                <div class="row">
+                    <div class="product-div-left col-xl-6 col-lg-6">
+                        <div class="img_container">
+                            <img src="img/main_products/RunningShoe/ultabootWhite1.webp" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="product-div-right col-xl-6 col-lg-6">
+                        <span class="product_name mb_18">Giày Thể Thao Nam Adidas Ultraboost 4.0</span>
+                        <span class="product_price mb_18">3.400.000 đ</span>
+                        <div class="product_rating mb_18">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                            <span>(2 đánh giá)</span>
+                        </div>
+                        <span class="product_design mb_18">Thiết kế: <b>Effy</b> </span>
+                        <span class="product_status mb_18">Tình trạng: <i>Còn hàng</i></span>
+                        <div class="size_quantity">
+                            <div class="quantity_wrapper">
+                                <div style="margin-right: 15px; text-align: center">Số lượng</div>
+                                <div class="wrapper">
+                                    <span class="button minus">-</span>
+                                    <input type="text" value="1" class="number">
+                                    <span class="button plus">+</span>
+                                </div>
+                            </div>
+                            <div class="size_wrapper">
+                                <div style="margin-right: 15px">Kích cỡ</div>
+                                <select class="select_size">
+                                    <option>-- Vui lòng chọn --</option>
+                                    <option>38</option>
+                                    <option>39</option>
+                                    <option>40</option>
+                                    <option>41</option>
+                                    <option>42</option>
+                                    <option>43</option>
+                                    <option>44</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn"><span>Hướng dẫn chọn kích cỡ<i class="fa-solid fa-chevron-right"></i></span></button>
+                        <div class="btn-groups">
+                            <button type="button" class="add_cart_btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                thêm vào giỏ hàng
+                            </button>
+                            <button type="button" class="buy_now_btn">
+                                <i class="fa-solid fa-wallet"></i>
+                                mua ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--tab-->
+        <div class="tabs_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="product_details-tab">
+                            <!--tab items-->
+                            <div class="tabs">
+                                <ul class="nav-tabs">
+                                    <li class="active"><a href="#menu_1"><strong>Mô tả</strong></a></li>
+                                    <li><a href="#menu_2"><strong>Thông tin chi tiết</strong></a></li>
+                                    <li><a href="#menu_3"><strong>Đánh giá</strong></a></li>
+                                </ul>
+                            </div>
+                            <!--tab contents-->
+                            <div class="tab-content">
+                                <div id="menu_1" class="tab-content-item">
+                                    <p>Dù mới chỉ ra mắt vào năm 2015 nhưng adidas Ultra Boost 4.0 DNA đã nhanh chóng 
+                                        trở thành một huyền thoại mới trong giới giày chạy bộ. Được cấu thành từ vải dệt
+                                         kim thoáng khí, mềm mại. Chất liệu vải cao cấp tạo nên form giày vừa vặn, có tác 
+                                         dụng nâng đỡ đôi chân, giúp định hướng chuyển động.</p>
+                                    <p>Giày adidas Ultra Boost 4.0 DNA có thiết kế khá đơn giản. Độ chênh lệch đế giữa là 
+                                        10mm tạo cảm giác năng động cho người mang. Đặc biệt đối với dòng Ultra Boost này
+                                         màu sắc được thiết kế vô cùng tối giản tạo nên sự thanh lịch, trẻ trung.</p>
+                                    <p>Giày adidas Ultraboost 4.0 DNA là một siêu phẩm được giới trẻ săn lùng bởi tính các
+                                         tính năng vượt trội và kiểu dáng hiện đại, trẻ trung.</p>
+                                </div>
+                                <div id="menu_2" class="tab-content-item">
+                                    <div class="table-wrapper">
+                                        <table class="table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>Giá:</b></td>
+                                                    <td>3.400.000đ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Danh mục:</b></td>
+                                                    <td>Giày Chạy Bộ</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td><b>Màu:</b></td>
+                                                    <td>Trắng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Thiết kế:</b></td>
+                                                    <td>Effy</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="menu_3" class="tab-content-item">
+                                    <div class="product_review_form">
+                                        <ol class="comment_list">
+                                            <li class="comment">
+                                                <div class="comment_container">
+                                                    <div class="review_top">
+                                                        <strong class="review_author">Hoàng Thị Bích Ngọc</strong>
+                                                    </div>
+                                                    <div class="review_mid">
+                                                        <div class="star_rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                                                        </div>
+                                                        <div class="description">Giao siêu nhanh, đặt hôm trước hôm sau
+                                                            có. Sản phẩm giống ảnh.</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="comment">
+                                                <div class="comment_container">
+                                                    <div class="review_top">
+                                                        <strong class="review_author">Nguyễn Văn Hoàng</strong>
+                                                    </div>
+                                                    <div class="review_mid">
+                                                        <div class="star_rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </div>
+                                                        <div class="description">Đóng gói cẩn thận. Shop giao hàng
+                                                            nhanh. Sẽ tiếp tục ủng hộ!</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                        <form action="#">
+                                            <h2>Thêm nhận xét</h2>
+
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="review_comment">Nhận xét của bạn </label>
+                                                    <div class="star_rating" style="margin-bottom: 20px;">
+                                                        <span><a href=""><i class="fa-regular fa-star"></i></a></span>
+                                                        <span><a href=""><i class="fa-regular fa-star"></i></a></span>
+                                                        <span><a href=""><i class="fa-regular fa-star"></i></a></span>
+                                                        <span><a href=""><i class="fa-regular fa-star"></i></a></span>
+                                                        <span><a href=""><i class="fa-regular fa-star"></i></a></span>
+                                                    </div>
+                                                    <textarea name="comment" id="review_comment"></textarea>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label for="author">Tên </label>
+                                                    <input id="author" type="text">
+
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label for="email">Email </label>
+                                                    <input id="email" type="text">
+                                                </div>
+                                            </div>
+                                            <button type="submit">Gửi</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    <!--footer page-->
+    <section class="footer_area">
+        <div class="footer_page">
+                <div class="footer_page-inforCompany">
+                    <h3>Thông tin công ty</h3>
+                    <ul>
+                        <li>Giới thiệu công ty</li>
+                        <li>Hệ thống siêu thị</li>
+                        <li>Phương châm bán hàng</li>
+                        <li>Cơ hội nghề nghiệp</li>
+                        <li>Mua hàng doanh nghiệp</li>
+                    </ul>
+                </div>
+                <div class="footer_page-policy">
+                    <h3>Chính sách chung</h3>
+                    <ul>
+                        <li>Bảo trì - Bảo hành - Đổi trả</li>
+                        <li>Quy định giao hàng</li>
+                        <li>Điều khoản sử dụng</li>
+                        <li>Thỏa thuận người dùng</li>
+                        <li>Cần thuê mặt bằng</li>
+                    </ul>
+                </div>
+                <div class="footer_page-members">
+                    <h3>Thẻ thành viên</h3>
+                    <ul>
+                        <li>Quyền lợi của thành viên</li>
+                        <li>Hỗ trợ thành viên</li>
+                        <li>Giftcard - Thẻ quà tặng</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="footer_page-buyOnline">
+                    <h3>Mua hàng online</h3>
+                    <ul>
+                        <li>Lợi ích khi mua hàng online</li>
+                        <li>Thông tin chuyển khoản</li>
+                        <li>Hướng dẫn mua hàng</li>
+                        <li>Câu hỏi thường gặp</li>
+                    </ul>
+                </div>
+                <div class="footer_page-social">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul>
+                        <li class="facebook"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="instagram"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+</body>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/productdetail.js"></script>
+<script src="js/lightslider.js"></script>
+
+</html>
